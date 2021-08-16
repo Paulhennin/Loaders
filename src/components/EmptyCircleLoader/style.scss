@@ -1,0 +1,53 @@
+.section-9 {
+  background-color: darkorange !important;
+}
+
+.loading-empty-circle {
+  color: #0078B3;
+}
+
+.loader-empty-circle {
+  border-radius: 50px;
+  border: 6px solid transparent;
+  animation:load 1s linear infinite;
+  &:after {
+    content:'';
+    position: absolute;
+    top: -6px; 
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color:#0078B3;
+    animation:spin 1s linear infinite;
+  }
+}
+
+@keyframes load{
+  0% {
+    border-top-color: #0078B3;
+  }
+  24% {border-right-color: transparent;}
+  25% {
+    border-right-color: #0078B3;
+  }
+  49% {
+    border-bottom-color: transparent;
+    border-right-color: #0078B3;
+  } 
+  50% {
+    border-bottom-color: #0078B3;
+    border-right-color: #0078B3;
+  }
+  74% {border-left-color: transparent;
+    border-bottom-color: #0078B3;
+    border-right-color: #0078B3;}
+  75% {border-left-color: #0078B3;
+    border-bottom-color: #0078B3;
+    border-right-color: #0078B3;}
+  100% {
+    border-color: #0078B3;
+  }
+}
+
