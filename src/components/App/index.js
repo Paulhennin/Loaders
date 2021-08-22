@@ -2,15 +2,16 @@
 import React from 'react';
 
 // == Import
-import CircleLoader from 'src/components/CircleLoader';
-import CirclesLoader from 'src/components/CirclesLoader';
-import DoubleLoader from 'src/components/DoubleLoader';
-import BallInBarLoader from 'src/components/BallInBarLoader';
-import FlipSquareLoader from 'src/components/FlipSquareLoader';
-import EmptyCircleLoader from 'src/components/EmptyCircleLoader';
-import GifLoader from 'src/components/GifLoader';
+import CircleLoader from '../CircleLoader';
+import CirclesLoader from '../CirclesLoader';
+import DoubleLoader from '../DoubleLoader';
+import BallInBarLoader from '../BallInBarLoader';
+import FlipSquareLoader from '../FlipSquareLoader';
+import EmptyCircleLoader from '../EmptyCircleLoader';
+import GifLoader from '../GifLoader';
 import BarsLoader from '../BarsLoader';
 import BarLoader from '../BarLoader';
+import LightCircleGradientLoader from '../LightCircleGradientLoader';
 
 import './styles.css';
 // == Composant
@@ -25,6 +26,7 @@ const App = () => (
     <FlipSquareLoader />
     <GifLoader />
     <EmptyCircleLoader />
+    <LightCircleGradientLoader />
   </>
 );
 
